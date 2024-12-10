@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "cypress": "^13.16.1",
+    "typescript": "^5.7.2"
+  }
+}
