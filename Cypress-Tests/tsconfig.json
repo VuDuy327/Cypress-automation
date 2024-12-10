@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "types": ["cypress"],
+    "lib": ["dom", "es2022"],
+    "strict": true,
+    "resolveJsonModule": true
+  }
+}

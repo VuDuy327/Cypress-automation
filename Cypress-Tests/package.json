@@ -3,5 +3,9 @@
     "@types/node": "^22.10.1",
     "cypress": "^13.16.1",
     "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "cypress:api": "cypress run --config-file cypress.config.ts",
+    "cypress:open-api": "cypress open --config-file cypress.config.ts"
   }
 }
