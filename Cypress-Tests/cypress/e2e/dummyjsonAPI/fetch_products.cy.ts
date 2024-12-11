@@ -1,10 +1,8 @@
-const env = Cypress.env();
-
 describe("Fetch Products API Tests", () => {
   it("Should fetch a list of products", () => {
     cy.request({
       method: "GET",
-      url: `${env.API_HOST}`,
+      url: "/",
     }).then((response) => {
       expect(response.status).to.eq(200);
       expect(response.body).to.have.property("products");

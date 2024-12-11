@@ -5,7 +5,7 @@
     "typescript": "^5.7.2"
   },
   "scripts": {
-    "cypress:api": "cypress run --config-file cypress.config.ts",
-    "cypress:open-api": "cypress open --config-file cypress.config.ts"
+    "cypress:api": "cypress run --browser chrome --config-file cypress.config.ts",
+    "cypress:open-api": "cypress open --browser chrome --config-file cypress.config.ts"
   }
 }
