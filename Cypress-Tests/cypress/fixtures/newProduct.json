@@ -1,0 +1,15 @@
+{
+  "newProduct": [
+    {
+      "title": "Ikea Product",
+      "description": "Best Ikea product",
+      "category": "furniture"
+    },
+
+    {
+      "title": "Biltema Product",
+      "description": "Best Biltema product",
+      "category": "accessory"
+    }
+  ]
+}

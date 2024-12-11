@@ -2,7 +2,7 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
-    baseUrl: "http://dummyjson.com/products",
+    baseUrl: "https://dummyjson.com/products",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
@@ -10,6 +10,6 @@ export default defineConfig({
   },
 
   env: {
-    API_HOST: "http://dummyjson.com/products",
+    API_HOST: "https://dummyjson.com/products",
   },
 });

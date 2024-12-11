@@ -13,7 +13,7 @@ describe("Fetch Products API Tests", () => {
   });
 
   it("Should fetch a single product by ID", () => {
-    cy.fixture(`products`).then((filecontent: any) => {
+    cy.fixture("products").then((filecontent: any) => {
       filecontent.products.forEach((expectedProduct: any) => {
         cy.request({
           method: "GET",
