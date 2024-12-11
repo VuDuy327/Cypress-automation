@@ -8,8 +8,4 @@ export default defineConfig({
     },
     specPattern: ["cypress/e2e/dummyjsonAPI/*"],
   },
-
-  env: {
-    API_HOST: "https://dummyjson.com/products",
-  },
 });
