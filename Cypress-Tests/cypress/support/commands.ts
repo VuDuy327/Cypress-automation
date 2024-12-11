@@ -35,3 +35,30 @@
 //     }
 //   }
 // }
+declare namespace Cypress {
+  interface Chainable<Subject = any> {
+    slowDownCommand(time: number): Cypress.Chainable<Subject>;
+  }
+}
+
+//Nice to have for debugging, slowing down speed of commands
+Cypress.Commands.add("slowDownCommand", (time: number) => {
+  for (const commandName of [
+    "click",
+    "trigger",
+    "type",
+    "clear",
+    "request",
+  ] as const) {
+    // we add 1s delays for a few commands
+    const commandWithDelay = ((
+      command: (...args: unknown[]) => unknown,
+      ...args: unknown[]
+    ) =>
+      new Promise((resolve) => {
+        setTimeout(() => resolve(command(...args)), time);
+      })) as any as Cypress.CommandFnWithOriginalFn<typeof commandName>;
+
+    Cypress.Commands.overwrite(commandName, commandWithDelay);
+  }
+});
