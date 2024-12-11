@@ -1,0 +1,20 @@
+{
+  "updateProducts": [
+    {
+      "id": 1,
+      "update": {
+        "title": "AI Mascara",
+        "description": "The best effects",
+        "category": "beauty"
+      }
+    },
+    {
+      "id": 2,
+      "update": {
+        "title": "Sofa",
+        "description": "A good sofa",
+        "category": "furniture"
+      }
+    }
+  ]
+}
